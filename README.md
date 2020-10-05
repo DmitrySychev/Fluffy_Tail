@@ -1,9 +1,5 @@
 README
 
-Flatiron School
-
-Mod 2 - Project
-
 User Story
 
 1. User should be able to search for a pet.

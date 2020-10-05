@@ -1,5 +1,5 @@
 {
-  "name": "Mod2_Project",
+  "name": "Fluffy-Tail",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",

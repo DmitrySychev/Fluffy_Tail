@@ -1,0 +1,104 @@
+/* line 5, app/assets/stylesheets/users.scss */
+.background {
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 10, app/assets/stylesheets/users.scss */
+html {
+  height: 100%;
+}
+
+/* line 14, app/assets/stylesheets/users.scss */
+.carousel {
+  z-index: -99;
+}
+
+/* keeps this behind all content */
+/* line 15, app/assets/stylesheets/users.scss */
+.carousel .item {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+
+/* line 28, app/assets/stylesheets/users.scss */
+.carousel .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* line 34, app/assets/stylesheets/users.scss */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+/* line 45, app/assets/stylesheets/users.scss */
+.center {
+  position: relative;
+  margin-left: 40%;
+}
+
+/* line 50, app/assets/stylesheets/users.scss */
+.form_box {
+  width: 320px;
+  padding: 50px;
+  border: 5px solid gray;
+  margin-top: 4rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 60, app/assets/stylesheets/users.scss */
+#signup_header {
+  text-align: center;
+}
+
+/* line 65, app/assets/stylesheets/users.scss */
+.container-users {
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+/* line 76, app/assets/stylesheets/users.scss */
+.button-container {
+  width: 50%;
+  margin: auto;
+}
+
+/* line 81, app/assets/stylesheets/users.scss */
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* line 87, app/assets/stylesheets/users.scss */
+#index-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: auto;
+}

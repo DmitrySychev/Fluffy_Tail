@@ -13,9 +13,7 @@ User Story
 7. Validate breed, pet form fields.
 
 
-
 SETUP AND INSTALLATION 
-
 
 1. Run - bundle install
 

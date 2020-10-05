@@ -1,0 +1,10 @@
+/* line 5, app/assets/stylesheets/favorites.scss */
+body {
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 10, app/assets/stylesheets/favorites.scss */
+html {
+  height: 100%;
+}

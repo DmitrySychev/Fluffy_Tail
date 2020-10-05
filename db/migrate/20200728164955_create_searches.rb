@@ -5,7 +5,7 @@ class CreateSearches < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :breed
       t.string :animal_type
-      t.integer :phone_number
+      t.bigint :phone_number
       t.integer :age
 
       t.timestamps

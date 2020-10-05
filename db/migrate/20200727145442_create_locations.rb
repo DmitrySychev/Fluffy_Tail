@@ -3,7 +3,7 @@ class CreateLocations < ActiveRecord::Migration[6.0]
     create_table :locations do |t|
       t.string :name
       t.string :address
-      t.integer :phone
+      t.bigint :phone
 
       t.timestamps
     end

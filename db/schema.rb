@@ -10,25 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_31_011823) do
+ActiveRecord::Schema.define(version: 2020_07_30_182201) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "favorites", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "pet_id", null: false
+    t.integer "user_id"
+    t.integer "pet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["pet_id"], name: "index_favorites_on_pet_id"
-    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.integer "phone"
+    t.bigint "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.float "latitude"
-    t.float "longitude"
   end
 
   create_table "pets", force: :cascade do |t|
@@ -50,7 +49,7 @@ ActiveRecord::Schema.define(version: 2020_07_31_011823) do
     t.string "name"
     t.string "breed"
     t.string "animal_type"
-    t.integer "phone_number"
+    t.bigint "phone_number"
     t.integer "age"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -64,6 +63,4 @@ ActiveRecord::Schema.define(version: 2020_07_31_011823) do
     t.string "password_digest"
   end
 
-  add_foreign_key "favorites", "pets"
-  add_foreign_key "favorites", "users"
 end
